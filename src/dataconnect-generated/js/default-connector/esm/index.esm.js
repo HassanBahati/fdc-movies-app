@@ -1,8 +1,8 @@
 import { getDataConnect, queryRef, executeQuery, mutationRef, executeMutation, validateArgs } from 'firebase/data-connect';
 
 export const connectorConfig = {
-  connector: 'default',
-  service: 'firebase-data-connect-example',
+  connector: 'movie-connector',
+  service: 'fdc-quickstart-web',
   location: 'us-central1'
 };
 

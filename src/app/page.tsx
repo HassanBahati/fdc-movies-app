@@ -1,8 +1,18 @@
+"use client";
 import Image from "next/image";
-import { listMovies } from "@firebasegen/default-connector";
+import { useEffect } from "react";
+import { handleGetMovies } from "@/lib/movies-service";
 
-export default async function Home() {
-  const movies = await listMovies();
+export default function Home() {
+  useEffect(() => {
+    async function fetchMovies() {
+      const topMoviesData = await handleGetMovies();
+
+      console.log("topMoviesData", topMoviesData);
+    }
+
+    fetchMovies();
+  }, []);
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

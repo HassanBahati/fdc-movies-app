@@ -1,5 +1,5 @@
 specVersion: "v1beta"
-serviceId: "firebase-data-connect-example"
+serviceId: "fdc-quickstart-web"
 location: "us-central1"
 schema:
   source: "./schema"
@@ -7,6 +7,6 @@ schema:
     postgresql:
       database: "fdcdb"
       cloudSql:
-        instanceId: "firebase-data-connect-example-fdc"
+        instanceId: "fdc-quickstart-web-fdc"
       # schemaValidation: "COMPATIBLE"
 connectorDirs: ["./connector"]
