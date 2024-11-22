@@ -1,6 +1,8 @@
 # FDC Movie App
 
-Firebase Data Connect Example using Next.Js, Tailwind
+Firebase Data Connect Example using Next.Js
+
+![alt text](.github/image.png)
 
 ## Getting Started
 
