@@ -1,4 +1,4 @@
-FDC Movie App
+# FDC Movie App
 Firebase Data Connect Example
 
 ## Getting Started
